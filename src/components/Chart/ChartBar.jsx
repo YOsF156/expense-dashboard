@@ -8,7 +8,7 @@ function ChartBar(prop) {
     }
     return (
         <div className="chart-bar">
-            <div className="chart-bar__label">{prop.value}</div>
+            <div className="chart-bar__label">{prop.value.toLocaleString()}</div>
             <div className="chart-bar__inner">
                 <div style={{ height: barFillheight }} className="chart-bar__fill"></div>
             </div>
