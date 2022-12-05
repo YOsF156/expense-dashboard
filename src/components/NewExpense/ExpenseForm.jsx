@@ -49,15 +49,15 @@ function ExpenseForm(props) {
             <div className="new-expense__controls">
                 <div className="new-expense__control">
                     <label>Title</label>
-                    <input value={userInput.enteredTitle} onChange={updateInputs} name="enteredTitle" type="text" />
+                    <input required value={userInput.enteredTitle} onChange={updateInputs} name="enteredTitle" type="text" />
                 </div>
                 <div className="new-expense__control">
                     <label>Amount</label>
-                    <input value={userInput.enteredAmount} onChange={updateInputs} name="enteredAmount" type="number" min="0.01" step="0.01" />
+                    <input required value={userInput.enteredAmount} onChange={updateInputs} name="enteredAmount" type="number" min="0.01" step="0.01" />
                 </div>
                 <div className="new-expense__control">
                     <label>Date</label>
-                    <input value={userInput.enteredDate} onChange={updateInputs} name="enteredDate" type="date" min="2019-01-01" max="2022-12-31" />
+                    <input required value={userInput.enteredDate} onChange={updateInputs} name="enteredDate" type="date" min="2019-01-01" max="2022-12-31" />
                 </div>
             </div>
             <div className="new-expense__actions">
